@@ -1,10 +1,7 @@
 package com.timvisee.tvnlib.api;
 
 import org.bukkit.Bukkit;
-import org.bukkit.Material;
 import org.bukkit.entity.LivingEntity;
-import org.bukkit.inventory.EntityEquipment;
-import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
 
 import com.timvisee.tvnlib.TVNLib;
@@ -66,26 +63,6 @@ public class TVNLibApi {
 	public static boolean livingEntityTargetTo(LivingEntity livingEntity, double x, double y, double z, float speed) {
 		return TVNLibApi.plugin.getEntityHandler().livingEntityTargetTo(livingEntity, x, y, z, speed);
     }
-	
-	@Deprecated
-    public static void setMonsterEquipment(LivingEntity monster, Material head, Material chest, Material legs, Material boots, Material weapon){
-    	EntityEquipment equip = monster.getEquipment();
-    	equip.setHelmet(new ItemStack(head));
-    	equip.setChestplate(new ItemStack(chest));
-    	equip.setLeggings(new ItemStack(legs));
-    	equip.setBoots(new ItemStack(boots));
-    	equip.setItemInHand(new ItemStack(weapon));
-    }
-    
-	@Deprecated
-	public static void setMonsterEquipment(LivingEntity monster, ItemStack head, ItemStack chest, ItemStack legs, ItemStack boots, ItemStack weapon) {
-		EntityEquipment equip = monster.getEquipment();
-		equip.setHelmet(head);
-    	equip.setChestplate(chest);
-    	equip.setLeggings(legs);
-    	equip.setBoots(boots);
-    	equip.setItemInHand(weapon);
-	}
 	
 	/**
 	 * Get the current Minecraft version the server is running

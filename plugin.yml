@@ -1,7 +1,7 @@
 name: TVNLib
 description: 'A native API core plugin'
 main: com.timvisee.tvnlib.TVNLib
-version: 0.1.1
+version: 0.1.2
 load: startup
 author: timvisee
 website: http://timvisee.com/

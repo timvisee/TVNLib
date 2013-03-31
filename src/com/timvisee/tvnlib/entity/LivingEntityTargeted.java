@@ -86,7 +86,7 @@ public class LivingEntityTargeted {
 	}
 	
 	public boolean move() {
-		return ((org.bukkit.craftbukkit.v1_4_R1.entity.CraftLivingEntity) this.le).getHandle().getNavigation().a(this.x, this.y, this.z, this.speed);
+		return ((org.bukkit.craftbukkit.v1_5_R2.entity.CraftLivingEntity) this.le).getHandle().getNavigation().a(this.x, this.y, this.z, this.speed);
 	}
 	
 	public double getDistance() {

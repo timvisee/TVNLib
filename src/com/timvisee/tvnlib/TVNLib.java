@@ -15,7 +15,7 @@ import com.timvisee.tvnlib.handler.EntityHandler;
 public class TVNLib extends JavaPlugin {
 	
 	// Constants
-	public final String[] SUPPORTED_MC_VERS = new String[]{"1.4.6", "1.4.7"};
+	public final String[] SUPPORTED_MC_VERS = new String[]{"1.5.1"};
 	
 	// Minecraft logger
 	private static final Logger log = Logger.getLogger("Minecraft");	
@@ -54,12 +54,6 @@ public class TVNLib extends JavaPlugin {
 	public void onDisable() {
 		log.info("[TVNLib] TVNLib Disabled!");
 	}
-	
-	/*public void checkUpdates() {
-		XMLReader myReader = XMLReaderFactory.createXMLReader();
-		myReader.setContentHandler(handler);
-		myReader.parse(new InputSource(new URL("").openStream()));
-	}*/
 	
 	public void setupApi() {
 		TVNLibApi.setPlugin(this);
